@@ -1,0 +1,29 @@
+.full {
+	height: 100vh;
+	background-color: white;
+}
+
+.middlewrapper {
+	height: 100%;
+}
+
+.navbar {
+	background-color: #182d48 !important;
+}
+
+.white-container {
+	background-color: white;
+}
+
+.divided {
+	border-right: 1px solid #e5e5e5;
+}
+
+.activeNav {
+	border-right: 2px solid black;
+	color: black;
+}
+
+.tile-img {
+	background-color: red;
+}
