@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const EventTile = () => {
   return (
@@ -20,12 +21,14 @@ const EventTile = () => {
 
         <div className="uk-grid uk-flex uk-flex-right uk-grid-medium uk-child-width-auto">
           <div>
-            <button className="uk-button uk-button-text">
+            <Link
+              className="uk-button uk-button-text"
+              to="/admin/events/list/startup-challenge">
               <span
                 className="uk-margin-small-right"
                 data-uk-icon="icon: pencil; ratio: 0.7"
               />Edit
-            </button>
+            </Link>
           </div>
           <div>
             <button className="uk-button uk-button-text">

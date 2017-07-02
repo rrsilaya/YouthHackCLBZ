@@ -2,6 +2,8 @@ import { ROUTE, REDIRECT } from '../../../global/constants';
 
 import Overview from './Overview';
 import List from './events/List';
+import Participants from './events/Participants';
+import EditEvent from './events/EditEvent';
 
 const adminRoutes = [
   {
@@ -16,6 +18,17 @@ const adminRoutes = [
     path: '/admin/events/list',
     component: List
   },
+  {
+    type: ROUTE,
+    path: '/admin/events/list/:id',
+    component: EditEvent
+  },
+  {
+    type: ROUTE,
+    exact: true,
+    path: '/admin/events/participants',
+    component: Participants
+  } /*,
 
   {
     type: REDIRECT,
@@ -26,7 +39,7 @@ const adminRoutes = [
   {
     type: REDIRECT,
     to: '/admin'
-  }
+  }*/
 ];
 
 export default adminRoutes;

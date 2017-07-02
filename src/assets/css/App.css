@@ -11,6 +11,18 @@
 	background-color: #182d48 !important;
 }
 
+.uk-logo img {
+	height: 30px;
+}
+
+.white {
+	color: white !important;
+}
+
+.white:hover {
+	text-decoration: none !important;
+}
+
 .white-container {
 	background-color: white;
 }
@@ -21,7 +33,7 @@
 
 .activeNav {
 	border-right: 2px solid black;
-	color: black;
+	color: black !important;
 }
 
 .tile-img {

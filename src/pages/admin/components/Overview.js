@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Stats from './overview/Stats';
+
 class Overview extends Component {
   render() {
     return (
@@ -9,6 +11,8 @@ class Overview extends Component {
           If you are seeing this, you must be an administrator of the YouthHack
           CALABARZON website!
         </p>
+
+        <Stats />
       </div>
     );
   }

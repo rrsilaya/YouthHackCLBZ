@@ -17,11 +17,11 @@ const Sidebar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink activeClassName="activeNav" to="/admin/events/forms">
+        <NavLink activeClassName="activeNav" to="/admin/events/participants">
           <span
             className="uk-margin-small-right"
-            data-uk-icon="icon: file"
-          />Forms
+            data-uk-icon="icon: users"
+          />Participants
         </NavLink>
       </li>
     </ul>
