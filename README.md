@@ -8,7 +8,7 @@
 	<br />
   YouthHack CALABARZON
 </h1>
-<h4 align="center">YouthHack CALABARZON Website in ReactJS</h4>
+<h4 align="center">YouthHack CALABARZON Website (Single-Page Application) in ReactJS</h4>
 
 ### Dependencies
 * [NodeJS](https://nodejs.org/)
