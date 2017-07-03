@@ -1,12 +1,12 @@
 <h1 align="center">
   <img src="./src/assets/images/yhlogo.png" height="150px" />
+	<br />
+	YouthHack CALABARZON
   <br />
 	<img src="https://img.shields.io/badge/yarn-v0.27.5-green.svg" />
 	<img src="https://img.shields.io/badge/react-v15.6.1-green.svg" />
 	<img src="https://img.shields.io/badge/uikit-v3.0.0--beta.25-green.svg" />
 	<img src="https://img.shields.io/badge/firebase-v4.1.3-green.svg" />			
-	<br />
-  YouthHack CALABARZON
 </h1>
 <h4 align="center">YouthHack CALABARZON Website (Single-Page Application) in ReactJS</h4>
 
