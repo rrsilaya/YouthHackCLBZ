@@ -1,6 +1,5 @@
 .full {
 	height: 100vh;
-	background-color: white;
 }
 
 .middlewrapper {
@@ -38,4 +37,72 @@
 
 .tile-img {
 	background-color: red;
+}
+
+.gray {
+	background-color: #efefef;
+}
+
+.public-nav {
+	background-color: white !important;
+}
+
+.img-splash {
+	height: calc(100vh - 80px);
+	width: 100%;
+	background-size: cover;
+	background-position: right center;
+	position: relative;
+	background-color: #182d48;
+	overflow: hidden;
+}
+
+.splash-title {
+	position: absolute;
+	top: 0;
+	height: 75%;
+	width: 100vw;
+}
+
+.splash-overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 40%;
+	background-position: top center;
+	background-size: cover;
+}
+
+.splash-logo {
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	margin: auto;
+}
+
+.learnbtn {
+	border: 1px solid #182d48 !important;
+	color: #182d48 !important;
+	border-radius: 500px;
+}
+
+.learnbtn:hover {
+	background-color: #182d48 !important;
+	color: white !important;
+}
+
+#yh-tagline {
+	color: white !important;
+	line-height: 1.25;
+	margin: 1.25rem 0;
+}
+
+.navlink {
+	height: 1.75rem !important;
+	padding: 0 !important;
+	margin: 0 1rem !important;
+}
+
+nav {
+	height: 80px !important;
 }

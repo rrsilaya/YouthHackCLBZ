@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import DocumentTitle from 'react-document-title';
 
-import UIkit from 'uikit';
+import { ScaleLoader } from 'halogen';
 
 class Login extends Component {
   handleFormSubmit = e => {
     e.preventDefault();
-    console.log(e.target.password.value);
-    e.target.reset();
 
-    UIkit.notification('Logging in...');
+    if (e.target.password.value) {
+      this.props.login(e.target.password.value);
+    } else {
+      this.props.throwErr();
+      setTimeout(() => {
+        this.props.rmErr();
+      }, 800);
+    }
+
+    e.target.reset();
   };
 
   render() {
@@ -21,10 +28,24 @@ class Login extends Component {
               className="uk-grid uk-grid-small"
               onSubmit={this.handleFormSubmit}
               data-uk-grid>
+              {this.props.isLoading
+                ? <div className="uk-width-1-1 uk-text-center">
+                    <ScaleLoader color="#182d48" />
+                  </div>
+                : ''}
               <div className="uk-width-2-3@m uk-width-1-1@s">
                 <div className="uk-inline uk-width-1-1">
                   <span className="uk-form-icon" data-uk-icon="icon: lock" />
-                  <input type="password" name="password" className="uk-input" />
+                  <input
+                    type="password"
+                    name="password"
+                    className={
+                      'uk-input' +
+                      (this.props.hasError
+                        ? ' uk-form-danger uk-animation-shake'
+                        : '')
+                    }
+                  />
                 </div>
               </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../../assets/images/yhlogo.png';
 
 import { Link } from 'react-router-dom';
+import { BounceLoader } from 'halogen';
 
 const Navbar = () => {
   return (
@@ -10,6 +11,10 @@ const Navbar = () => {
         <Link to="/admin" className="uk-navbar-item uk-logo">
           <img className="uk-border-circle" src={logo} alt="YH-logo" />
         </Link>
+      </div>
+
+      <div className="uk-navbar-center">
+        <BounceLoader color="white" size="25px" />
       </div>
 
       <div className="uk-navbar-right">

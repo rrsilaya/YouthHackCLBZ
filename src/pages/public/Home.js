@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import DocumentTitle from 'react-document-title';
 
+import Navbar from './components/Navbar';
+import Splash from './components/Splash';
+
 class Home extends Component {
   render() {
     return (
       <DocumentTitle title="YouthHack CALABARZON">
-        <h1>Public Route</h1>
+        <div>
+          <Navbar />
+          <Splash />
+        </div>
       </DocumentTitle>
     );
   }

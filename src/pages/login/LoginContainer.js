@@ -1,7 +1,14 @@
 import { connect } from 'react-redux';
 import Login from './Login';
 
-const mapStateToProps = state => ({});
+import { login, throwErr, rmErr } from './duck';
 
-const LoginContainer = connect(mapStateToProps, {})(Login);
+const mapStateToProps = state => ({
+  isLoading: state.login.isLoading,
+  hasError: state.login.hasError
+});
+
+const LoginContainer = connect(mapStateToProps, { login, throwErr, rmErr })(
+  Login
+);
 export default LoginContainer;

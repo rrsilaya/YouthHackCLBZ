@@ -3,9 +3,10 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 
 import auth from '../pages/duck';
+import login from '../pages/login/duck';
 
 const store = createStore(
-  combineReducers({ auth }),
+  combineReducers({ auth, login }),
   {},
   applyMiddleware(thunk, logger)
 );

@@ -9,7 +9,7 @@ class Admin extends Component {
   render() {
     return (
       <DocumentTitle title="YHCLBZ / Admin">
-        <div>
+        <div className="gray full">
           <Navbar />
           <div className="uk-margin-medium-left uk-margin-medium-right uk-margin-large-top uk-margin-large-bottom">
             <div
