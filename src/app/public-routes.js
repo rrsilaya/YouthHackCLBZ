@@ -7,20 +7,19 @@ const publicRoutes = [
   {
     type: ROUTE,
     exact: true,
-    path: '/',
-    component: Home
-  },
-  {
-    type: ROUTE,
-    exact: true,
     path: '/login',
     component: Login
   },
-
   {
     type: REDIRECT,
     from: '/admin',
     to: '/login'
+  },
+  {
+    type: ROUTE,
+    exact: true,
+    path: '/',
+    component: Home
   },
   {
     type: REDIRECT,

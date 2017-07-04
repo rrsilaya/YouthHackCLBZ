@@ -21,7 +21,7 @@ const Splash = () => {
         className="splash-overlay uk-flex uk-flex-bottom uk-flex-center"
         style={{ backgroundImage: `url(${overlay})` }}>
         <Link
-          to="/"
+          to="/about"
           className="uk-button uk-button-large uk-margin-medium-bottom uk-text-bold learnbtn">
           Learn More
         </Link>
