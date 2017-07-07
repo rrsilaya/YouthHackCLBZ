@@ -4,13 +4,18 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav
-      className="uk-navbar-container public-nav uk-container"
+      className="uk-navbar-container uk-width-1-1 public-nav uk-container"
       data-uk-navbar
       data-uk-sticky>
-      <div className="uk-navbar-left uk-visible@s">
-        <Link to="/" className="uk-navbar-item uk-logo">
+      <div className="uk-navbar-left">
+        <Link to="/" className="uk-navbar-item uk-logo uk-visible@s">
           <img src="images/yhlogo.png" alt="YH-logo" />
         </Link>
+
+        <button
+          className="uk-button uk-hidden@s uk-padding-remove uk-margin-small-left"
+          data-uk-icon="icon: menu"
+        />
       </div>
 
       <div className="uk-navbar-center uk-hidden@s">
