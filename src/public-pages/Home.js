@@ -16,7 +16,15 @@ class Home extends Component {
           <Navbar />
 
           <Switch>
-            <Route exact path="/" component={Splash} />
+            <Route
+              exact
+              path="/"
+              component={() =>
+                <Splash
+                  imagesLoaded={this.props.imagesLoaded}
+                  setImageLoaded={this.props.setImageLoaded}
+                />}
+            />
             <Route component={PageContainer} />
           </Switch>
           {/*<FullLoader />*/}

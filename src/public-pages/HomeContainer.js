@@ -1,7 +1,11 @@
 import { connect } from 'react-redux';
 import Home from './Home';
 
-const mapStateToProps = state => ({});
+import { setImageLoaded } from './duck';
 
-const HomeContainer = connect(mapStateToProps, {})(Home);
+const mapStateToProps = state => ({
+  imagesLoaded: state.splash.imagesLoaded
+});
+
+const HomeContainer = connect(mapStateToProps, { setImageLoaded })(Home);
 export default HomeContainer;
