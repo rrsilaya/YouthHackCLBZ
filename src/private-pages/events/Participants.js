@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DocumentTitle from 'react-document-title';
 
-import EventParticipantParent from './EventParticipantParent';
+import EventParticipantParent from './components/EventParticipantParent';
 
 class Participants extends Component {
   render() {

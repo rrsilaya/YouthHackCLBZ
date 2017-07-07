@@ -18,7 +18,9 @@ export const rmErr = () => ({
 
 // Initial State
 const initialState = {
-  isLoading: false
+  isAuth: true,
+  isLoading: false,
+  isRequestingAuth: false
 };
 
 // Reducer

@@ -1,38 +1,17 @@
 import React, { Component } from 'react';
-import '../assets/css/App.css';
+import { BrowserRouter, withRouter, Switch, Route } from 'react-router-dom';
 
-import {
-  BrowserRouter,
-  withRouter,
-  Switch,
-  Route,
-  Redirect
-} from 'react-router-dom';
-import { ROUTE } from '../global/constants';
-import publicRoute from './public-routes';
-import privateRoute from './private-routes';
+import '../assets/css/App.css';
+import Admin from '../private-pages/AdminContainer';
+import Home from '../public-pages/HomeContainer';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter history={withRouter}>
         <Switch>
-          {publicRoute.map(
-            (route, key) =>
-              route.type === ROUTE
-                ? route.path === '/login' && this.props.isAuth
-                  ? ''
-                  : <Route {...route} key={key} />
-                : !this.props.isAuth ? <Redirect {...route} key={key} /> : ''
-          )}
-          {this.props.isAuth
-            ? privateRoute.map(
-                (route, key) =>
-                  route.type === ROUTE
-                    ? <Route {...route} key={key} />
-                    : <Redirect {...route} key={key} />
-              )
-            : ''}
+          <Route path="/admin" component={Admin} />
+          <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>
     );

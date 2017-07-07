@@ -1,5 +1,5 @@
 import React from 'react';
-import FourthGrid from '../../../../global/FourthGrid';
+import FourthGrid from '../../../global/FourthGrid';
 
 const ParticipantTitle = () => {
   return (

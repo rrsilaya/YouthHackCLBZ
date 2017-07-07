@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import DocumentTitle from 'react-document-title';
 
-import EventTile from './EventTile';
-import NewEvent from './NewEvent';
+import EventTile from './components/EventTile';
+import NewEvent from './components/NewEvent';
 
 class List extends Component {
   render() {

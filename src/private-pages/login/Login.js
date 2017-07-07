@@ -25,7 +25,7 @@ class Login extends Component {
         <div className="full">
           <div className="middlewrapper uk-margin-medium-left uk-margin-medium-right uk-flex uk-flex-center uk-flex-middle">
             <form
-              className="uk-grid uk-grid-small"
+              className="uk-grid uk-background-default uk-padding-large uk-grid-small"
               onSubmit={this.handleFormSubmit}
               data-uk-grid>
               {this.props.isLoading

@@ -1,9 +1,9 @@
-import { ROUTE, REDIRECT } from '../../../global/constants';
+import { ROUTE, REDIRECT } from '../../global/constants';
 
-import Overview from './Overview';
-import List from './events/List';
-import Participants from './events/Participants';
-import EditEvent from './events/EditEvent';
+import Overview from '../overview/Overview';
+import List from '../events/List';
+import Participants from '../events/Participants';
+import EditEvent from '../events/components/EditEvent';
 
 const adminRoutes = [
   {
@@ -20,6 +20,7 @@ const adminRoutes = [
   },
   {
     type: ROUTE,
+    exact: true,
     path: '/admin/events/list/:id',
     component: EditEvent
   },
@@ -28,8 +29,7 @@ const adminRoutes = [
     exact: true,
     path: '/admin/events/participants',
     component: Participants
-  } /*,
-
+  },
   {
     type: REDIRECT,
     exact: true,
@@ -39,7 +39,7 @@ const adminRoutes = [
   {
     type: REDIRECT,
     to: '/admin'
-  }*/
+  }
 ];
 
 export default adminRoutes;

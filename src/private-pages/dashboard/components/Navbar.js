@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from '../../../assets/images/yhlogo.png';
 
 import { Link } from 'react-router-dom';
 import { BounceLoader } from 'halogen';
+
+import logo from '../../../assets/images/yhlogo.png';
 
 const Navbar = () => {
   return (

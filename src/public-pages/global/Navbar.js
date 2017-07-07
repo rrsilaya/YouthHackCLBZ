@@ -1,20 +1,18 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-import logo from '../../../assets/images/yhlogo.png';
-
 const Navbar = () => {
   return (
     <nav className="uk-navbar-container public-nav uk-container" data-uk-navbar>
       <div className="uk-navbar-left uk-visible@s">
         <Link to="/" className="uk-navbar-item uk-logo">
-          <img src={logo} alt="YH-logo" />
+          <img src="images/yhlogo.png" alt="YH-logo" />
         </Link>
       </div>
 
       <div className="uk-navbar-center uk-hidden@s">
         <Link to="/" className="uk-navbar-item uk-logo">
-          <img src={logo} alt="YH-logo" />
+          <img src="images/yhlogo.png" alt="YH-logo" />
         </Link>
       </div>
 
