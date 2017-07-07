@@ -6,8 +6,8 @@ import imagesloaded from 'imagesloaded';
 class Splash extends Component {
   componentWillMount() {
     imagesloaded(
-      document.querySelectorAll('.lazy-load'),
-      { background: true },
+      document.querySelectorAll('.img-splash'),
+      { background: '.lazy-load' },
       () => console.log('done')
     );
   }
