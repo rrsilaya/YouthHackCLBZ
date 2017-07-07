@@ -3,7 +3,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="uk-navbar-container public-nav uk-container" data-uk-navbar>
+    <nav
+      className="uk-navbar-container public-nav uk-container"
+      data-uk-navbar
+      data-uk-sticky>
       <div className="uk-navbar-left uk-visible@s">
         <Link to="/" className="uk-navbar-item uk-logo">
           <img src="images/yhlogo.png" alt="YH-logo" />

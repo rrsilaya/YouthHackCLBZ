@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import DocumentTitle from 'react-document-title';
+import { Switch, Route } from 'react-router-dom';
 
 import Navbar from './global/Navbar';
 import Splash from './global/Splash';
+import PageContainer from './page-container/PageContainer';
 
 import FullLoader from '../global/FullLoader';
 
@@ -12,7 +14,11 @@ class Home extends Component {
       <DocumentTitle title="YouthHack CALABARZON">
         <div>
           <Navbar />
-          <Splash />
+
+          <Switch>
+            <Route exact path="/" component={Splash} />
+            <Route component={PageContainer} />
+          </Switch>
           {/*<FullLoader />*/}
         </div>
       </DocumentTitle>

@@ -57,7 +57,7 @@
 .splash-title {
 	position: absolute;
 	top: 0;
-	height: 75%;
+	height: 80%;
 	width: 100vw;
 }
 
@@ -104,4 +104,9 @@
 
 nav {
 	height: 80px !important;
+}
+
+.page-container {
+	width: 80vw;
+	margin: auto;
 }
